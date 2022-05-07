@@ -4,10 +4,10 @@ import './index.sass'
 
 function NotesList () {
   return (
-    <div>
+    <div id='notes_list'>
       <AddNote />
       {
-        [1, 2, 3, 4, 5].map(el => {
+        [1, 2, 3, 4, 5, 6, 7, 8, 9].map(el => {
           return <Note key={el} />
         })
       }

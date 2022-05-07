@@ -1,0 +1,17 @@
+.note_block
+  background-color: rgba(255, 255, 255, .05)
+  &:hover
+    border-color: rgba(255, 255, 255, .7)
+    & > .note_actions
+      display: flex
+  & > .note_actions
+    display: none
+    & > span.icon
+      &#edit_icon::after
+        content: '✏️'
+      &#select_icon
+        font-size: 1rem
+        width: 1.5rem
+        height: 1.5rem
+        &::after
+          content: '✔️'
